@@ -35,9 +35,9 @@ function parseMensapage() {
           reject("Error occurred: ${e.message}");
         }
       });
-      ).on('error', (e)=>{
+      response.on('error', (e)=>{
         reject("Error occurred: ${e.message}");
-      }
+      });
     });
   });
 }
